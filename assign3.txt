@@ -1,0 +1,6 @@
+
+
+1) Yes ANSI recognize the data type DATE
+
+
+2)DML(Data Manipulation Language) is used as subdivision to insert value into table
