@@ -1,0 +1,12 @@
+1)  select * from orders where amt>1000;
+
+2)  select sname names,city cities from salespeople where comm>.10;
+
+3)  select * from customer where rating < =100 and city ="rome";
+
+4)   in the above table it will first run the query which are inside the paranthesis it will check the
+and CNUM and will give the result but we had use NOT operator so it will give the opposite result and that result is compare with amt<1000 to get the final result.
+
+5)   in the table first it will check date 1990-10-03 datas and snum in table and will give the combine result after that AND operator is used so that the result is compair with amt > 1500 and will give the intersect result and at last by using NOT it will give the oppsite result
+
+6)  select * from salespeople where (comm > .12 or comm < .14); 
