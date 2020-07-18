@@ -5,7 +5,7 @@ ii) select * from orders where odate between '1990-10-03 and '1990-10-03';
 
 2) select * from orders where snum in (select snum from salespeople where sname in('peel','motika'));
 
-3)
+3) select * from customer where cname between 'a%' and 'h%';
 
 4) select * from customer where cname like 'C%';
 
