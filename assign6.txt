@@ -1,7 +1,6 @@
-1)
-i) select * from orders where odate in ('1990-10-03',1990-10-04');
-
-ii) select * from orders where odate between '1990-10-03 and '1990-10-04';
+1) select * from orders where odate in ('1990-10-03',1990-10-04');
+   select * from orders where odate between '1990-10-03 and '1990-10-04';
+   select * from orders where odate='1990-10-03 or odate='1990-10-04';
 
 2) select * from orders where snum in (select snum from salespeople where sname in('peel','motika'));
 
@@ -9,4 +8,5 @@ ii) select * from orders where odate between '1990-10-03 and '1990-10-04';
 
 4) select * from customer where cname like 'C%';
 
-5) select * from orders where amt not like '%0%';
+5) select * from orders where amt not in('0','NULL');
+   select * from orders where not(amt ='0' or amt='NULL');
