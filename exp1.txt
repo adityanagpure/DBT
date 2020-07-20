@@ -1,0 +1,35 @@
+1)create table SEMP (empno char(4),empname char(20),basic float(9,2),deptno char(2),depthead char(4));
+
+
+2)create table SDEPT(deptno char(2), deptname char(15));
+
+
+3)insert into SDEPT values('10','Development'),('20','Training');
+
+4)insert into semp (empno,empname,basic,deptno)values('0001','SUNIL','6000','10');
+   insert into semp(empno,empname,basic,deptno)values('0002','HIREN','8000','20');
+   insert into SEMP values('0003','ALI',4000,'10','0001');
+   insert into semp (empno,empname,basic,depthead)values('0004','GEORGE','6000','0002');
+
+5)select * from supplier;
+
+6)select sno,sname from supplier;
+
+7)select pname,color from parts where city='london';
+
+8)select * from supplier where city='london';
+
+9)select * from supplier where city ='london' or city='paris';
+
+10)select * from projects where city='athens';
+
+11)select pname,weight from parts where weight between 12 and 14;
+
+12)select * from supplier where status >= 20;
+
+13)select * from supplier where city not in ('london');
+
+14)select city as "cities" from supplier;
+
+15)select weight,weight*1000 as "weight in milligrams",weight/10000 as"weight in kilograms" from parts;
+
