@@ -1,0 +1,15 @@
+1) select * from supplier order by city desc;
+
+2)select city,pname partname from parts order by city asc,partname asc;
+
+3)select * from supplier where status between 10 and 20;
+
+4)select * from parts where weight not between 10 and 15;
+
+5)select pname as "partname" from parts where pname like 's%';
+
+6)select * from supplier where city like 'L%';
+
+7)select * from projects where jname like '_ _ n%';
+
+ 
