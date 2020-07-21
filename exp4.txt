@@ -1,0 +1,24 @@
+1) select min (status) from supplier;
+
+2) select max (weight) from parts;
+
+3) select avg (weight) from parts;
+
+4) select count (pno) from parts where pno='p1';
+
+5) select count (pno) from parts group by pno;
+
+6) select avg (pno) from parts group ny pno;
+
+7) 
+
+8) select status,count(sname) from supplier group by status;
+
+9) select count (city) from project group by city;
+
+10) 
+count (status) :- it returns the number of row of status column without counting the NULLs
+
+count (*) :- it returns the total count of all the rows including the NULLs which are present in the column
+
+11) 
