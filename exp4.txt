@@ -14,11 +14,18 @@
 
 8) select status,count(sname) from supplier group by status;
 
-9) select count (city) from project group by city;
+9) select city,count (city) from project group by city;
 
 10) 
 count (status) :- it returns the number of row of status column without counting the NULLs
 
 count (*) :- it returns the total count of all the rows including the NULLs which are present in the column
 
-11) 
+11) select case 
+    when status = 10 then 'Ten'
+    when status = 20 then 'Twenty'
+    when status = 30 then 'Thirty'
+    when status = 40 then 'Forty'
+    else status 
+    end status,count (status) 'count'
+    from supplier group by status;
