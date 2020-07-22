@@ -1,0 +1,7 @@
+1) select orders.onum,customer.cname from orders,customer where orders.cnum=customer.cnum;
+
+2) select salespeople.snum,salespeople.sname,customer.cname from salespeople,customer where salespeople.snum=customer.snum;
+
+3) select cname,sname,comm from customer,salespeople where customer.snum=salespeople.snum having comm > 0.12;
+
+4) select comm,cname,rating from salespeople,customer where salespeople.snum=customer.snum having rating > 100;
