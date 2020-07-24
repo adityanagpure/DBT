@@ -1,0 +1,7 @@
+1) select cname from customer where rating >= any(select rating from customer where snum = (select snum from salespeople where sname='serre'));
+
+2)  select sname from salespeople where city != all(select city from customer);
+
+3) select amt from orders where amt > any(select amt from order where cnum in(select cnum from customer where city='london'));
+
+4) select amt from orders where amt > (select min(amt) from orders natural join customer where city ="london");

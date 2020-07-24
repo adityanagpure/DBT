@@ -1,0 +1,3 @@
+1)select s1.city,sal.sname,s1.sname from salespeople as s1,salespeople as sal where s1.city=sal.city and s1.sname!=sal.sname group by city;
+
+2) select cname,city from customer where rating = (select rating from customer where cname='hoffman');

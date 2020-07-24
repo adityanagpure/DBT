@@ -1,6 +1,6 @@
 1) select orders.onum,customer.cname from orders,customer where orders.cnum=customer.cnum;
 
-2) select salespeople.snum,salespeople.sname,customer.cname from salespeople,customer where salespeople.snum=customer.snum;
+2) select sname,cname,onum from orders,customer,salespeople where orders.snum=customer.snum and order.snum=salepeople.snum;
 
 3) select cname,sname,comm from customer,salespeople where customer.snum=salespeople.snum having comm > 0.12;
 
