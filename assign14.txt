@@ -1,0 +1,7 @@
+1) insert into salespeople(city,sname,comm,snum) vlaues('san jose','blanco',NULL,'1100');
+
+2) delete from orders where cnum=(select cnum from customer where cname='clemens');
+
+3) update customer set rating = rating + 100 where cnum=2002;
+
+4) update customer,orders set customer.snum=(select snum from salespeople where sname='motika'),orders.snum=(select snum from salespeople where sname='motika') where (customer.snum=(select snum from salespeople where sname='serres')) and (orders.snum = (select snum from salespeople where sname='serres'));
