@@ -1,0 +1,5 @@
+1)  create table order1 ( onum int(4) unique,cnum int(4),snum int(4),odate char(10) not null,unique(cnum,snum));
+
+2) create table salespeople1(comm float(7,2) default .10,snum int(4) primary key,sname varchar(10) check (sname=upper(sname)between 'A' and 'M'));
+
+3) select table order2(onum int not null,cnum int not null,snum int not null,check(onum>cnum>snum));

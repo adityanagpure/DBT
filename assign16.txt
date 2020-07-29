@@ -1,0 +1,8 @@
+1) create index i_onum on orders (onum);
+
+2) alter table add constraint unique (onum);
+
+3) create index i_snum on orders(snum);
+     select snum,odate from orders group by odate;
+
+4) alter table customer add constraint unique (rating);

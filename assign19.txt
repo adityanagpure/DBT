@@ -1,0 +1,7 @@
+1) create view v1 as select * from customer where rating = (select max(rating) from customer;
+
+2) create view v2 as select city,count(city) from salespeople group by city;
+
+3) create view v3 as select sname,avg(amt),count(o.snum) from orders o,salespeople s where s.snum=o.snum group by o.snum;
+
+4) create view v4 as select sname,cname from salespeople cross join customer;
