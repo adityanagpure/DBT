@@ -1,0 +1,7 @@
+1) First statement is updateable it can perform all DML operation
+
+2) create view commission as select snum,comm from salespeople where comm between 0.10 and 0.20 with check option;
+
+3) alter table orders modify odate date default current_timestamp;
+    create view entryorders as select * from orders;
+    select * from entryorders;
