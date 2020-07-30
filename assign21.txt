@@ -1,0 +1,22 @@
+1) create user amit identified by 'student';
+	
+	grant update on customer to amit;
+
+2) create user manoj identified ny 'student';
+
+	grant all on orders to  manoj;
+
+3) create user ajita identified by 'student';
+
+	grant insert on salespeople to ajit;
+	revoke insert on salespeople from ajit;
+
+4) create user abhijeet identified by 'student';
+    create view v1 as select * from customer where rating between 100        and 500;
+
+	grant insert,update on v1 to abhijeet;
+
+5) create user vikram identified by 'student';
+    create view v2 as select * from customer where rating > (select min       (rating) from customer;
+   
+	grant all on v7 to vikram;
