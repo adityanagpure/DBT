@@ -1,0 +1,4 @@
+1)
+
+2) alter table orders add column prev_order int;
+    alter table orders add constraint foreign key(prev_order) references     order(onum);
