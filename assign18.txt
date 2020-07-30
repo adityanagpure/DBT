@@ -1,4 +1,8 @@
-1)
+1) create table cityorders
+    select onum,amt,snum,cnum,city from orders natural join customer;
+    
+     alter table cityorders add constraint foreign key(onum) references         orders(onum)
 
 2) alter table orders add column prev_order int;
-    alter table orders add constraint foreign key(prev_order) references     order(onum);
+    
+    alter table orders add constraint foreign key(prev_order) references      order(onum);
